@@ -1,7 +1,7 @@
 const app = require('./config/server.js');
 
-require('./app/routes/index-routes.js')(app);
+require('./app/routes/index.js')(app);
 
-app.listen(app.get('port'),() =>{
-  console.log("Servidor en el puerto: ", app.get('port'));
+app.listen(app.get('port'), () => {
+  console.log("Running in port: ", app.get('port'));
 })

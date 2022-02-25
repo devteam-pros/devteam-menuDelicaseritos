@@ -1,0 +1,298 @@
+doctype html
+// Basic
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  // Mobile Metas
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Site Metas
+  title Menú DeliCaseritos
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  // Site Icons
+  link(rel='shortcut icon' href='/resources/images/favicon.ico' type='image/x-icon')
+  link(rel='apple-touch-icon' href='/resources/images/apple-touch-icon.png')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='/resources/css/bootstrap2.css')
+  // Site CSS
+  link(rel='stylesheet' href='/resources/css/style.css')
+  // Responsive CSS
+  link(rel='stylesheet' href='/resources/css/responsive.css')
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+body
+  // Start header
+  header.top-navbar
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      div.container
+        a.navbar-brand(href='/index')
+          img(src='/resources/images/logo.png' alt='')
+        button.navbar-toggler(
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbars-rs-food'
+            aria-controls='navbars-rs-food'
+            aria-expanded='false'
+            aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        div#navbars-rs-food.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/index') Inicio
+            li.nav-item
+              a.nav-link(href='#v-pills-home') Menú
+            li.nav-item
+              a.nav-link(href='#') Acerca de
+            li.nav-item
+              a.nav-link(href='#') Galería
+            li.nav-item
+              a.nav-link(href='#') Opiniones
+            li.nav-item
+              a.nav-link(href='#') Contáctanos
+            li.nav-item.dropdown
+              a#dropdown-a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') Plantillas
+              div.dropdown-menu(aria-labelledby='dropdown-a')
+                a.dropdown-item(href='/menu') Menu
+                a.dropdown-item(href='/reserva') Reserva
+                a.dropdown-item(href='/galeria') Galeria
+                a.dropdown-item(href='/about') Acerca
+  // End header
+  // Start slides
+  div#slides.cover-slides
+    ul.slides-container
+      li.text-left
+        img(src='/resources/images/slider-01.jpg' alt='')
+        div.container
+          div.row
+            div.col-md-12
+              h1.m-b-20
+                strong
+                  | Bienvenido al
+                  br
+                  | Menú de DeliCaseritos
+              p.m-b-40 Restaurante de almuerzos y comidas caseras a domicilio.
+              p
+                a.btn.btn-lg.btn-circle.btn-outline-new-white(href='#v-pills-home') &iexcl;Ordena!
+      li.text-left
+        img(src='/resources/images/slider-02.jpg' alt='')
+        div.container
+          div.row
+            div.col-md-12
+              h1.m-b-20
+                strong
+                  | Bienvenido al
+                  br
+                  | Menú de DeliCaseritos
+              p.m-b-40 Restaurante de almuerzos y comidas caseras a domicilio.
+              p
+                a.btn.btn-lg.btn-circle.btn-outline-new-white(href='#') &iexcl;Ordena!
+      li.text-left
+        img(src='/resources/images/slider-03.jpg' alt='')
+        div.container
+          div.row
+            div.col-md-12
+              h1.m-b-20
+                strong
+                  | Bienvenido al
+                  br
+                  | Menú de DeliCaseritos
+              p.m-b-40 Restaurante de almuerzos y comidas caseras a domicilio.
+              p
+                a.btn.btn-lg.btn-circle.btn-outline-new-white(href='#') &iexcl;Ordena!
+    div.slides-navigation
+      a.next(href='#')
+        i.fa.fa-angle-right(aria-hidden='true')
+      a.prev(href='#')
+        i.fa.fa-angle-left(aria-hidden='true')
+  // End slides
+  // Start About
+  div.about-section-box
+    div.container
+      div.row
+        div.col-lg-6.col-md-6.col-sm-12.text-center
+          div.inner-column
+            h1
+              | Bienvenido a 
+              span DeliCaseritos
+            h4 Little Story
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat.
+              | Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus,
+              | odio ante sodales augue, eget lacinia lectus erat et sem.
+        div.col-lg-6.col-md-6.col-sm-12
+          img.img-fluid(src='/resources/images/about-img.jpg' alt='')
+  // End About
+  div.qt-box.qt-background
+  // Start Menu
+  div.menu-box
+    div.container
+      div.row
+        div.col-lg-12
+          div.heading-title.text-center
+            h2 Nuestro Menú
+            p Lorem Ipsum is simply dummy text of the printing and typesetting
+      div.row.inner-menu-box
+        div.col-3
+          div#v-pills-tab.nav.flex-column.nav-pills(role='tablist' aria-orientation='vertical')
+        div.col-9
+          div#v-pills-tabContent.tab-content
+  // End Menu
+  // Start QT
+  div.qt-box.qt-background
+    div.container
+      div.row
+        div.col-md-8.ml-auto.mr-auto.text-center
+          p.lead
+            | &quot; If you&apos;re not the one cooking, stay out of the way and compliment the chef. &quot;
+          span.lead Michael Strahan
+  // End QT
+  // Start Gallery
+  div.gallery-box
+    div.container
+      div.row
+        div.col-lg-12
+          div.heading-title.text-center
+            h2 Gallery
+            p Lorem Ipsum is simply dummy text of the printing and typesetting
+      div.tz-gallery
+        div.row
+          div.col-sm-12.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-01.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-01.jpg' alt='Gallery Images')
+          div.col-sm-6.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-02.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-02.jpg' alt='Gallery Images')
+          div.col-sm-6.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-03.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-03.jpg' alt='Gallery Images')
+          div.col-sm-12.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-04.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-04.jpg' alt='Gallery Images')
+          div.col-sm-6.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-05.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-05.jpg' alt='Gallery Images')
+          div.col-sm-6.col-md-4.col-lg-4
+            a.lightbox(href='/resources/images/gallery-img-06.jpg')
+              img.img-fluid(src='/resources/images/gallery-img-06.jpg' alt='Gallery Images')
+  // End Gallery
+  // Start Customer Reviews
+  div.customer-reviews-box
+    div.container
+      div.row
+        div.col-lg-12
+          div.heading-title.text-center
+            h2 Customer Reviews
+            p Lorem Ipsum is simply dummy text of the printing and typesetting
+      div.row
+        div.col-md-8.mr-auto.ml-auto.text-center
+          div#reviews.carousel.slide(data-ride='carousel')
+            div.carousel-inner.mt-4
+              div.carousel-item.text-center.active
+                div.img-box.p-1.border.rounded-circle.m-auto
+                  img.d-block.w-100.rounded-circle(src='/resources/images/quotations-button.png' alt='')
+                h5.mt-4.mb-0
+                  strong.text-warning.text-uppercase Paul Mitchel
+                h6.text-dark.m-0 Web Developer
+                p.m-0.pt-3
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.
+              div.carousel-item.text-center
+                div.img-box.p-1.border.rounded-circle.m-auto
+                  img.d-block.w-100.rounded-circle(src='/resources/images/quotations-button.png' alt='')
+                h5.mt-4.mb-0
+                  strong.text-warning.text-uppercase Steve Fonsi
+                h6.text-dark.m-0 Web Designer
+                p.m-0.pt-3
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.
+              div.carousel-item.text-center
+                div.img-box.p-1.border.rounded-circle.m-auto
+                  img.d-block.w-100.rounded-circle(src='/resources/images/quotations-button.png' alt='')
+                h5.mt-4.mb-0
+                  strong.text-warning.text-uppercase Daniel vebar
+                h6.text-dark.m-0 Seo Analyst
+                p.m-0.pt-3
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.
+            a.carousel-control-prev(href='#reviews' role='button' data-slide='prev')
+              i.fa.fa-angle-left(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='#reviews' role='button' data-slide='next')
+              i.fa.fa-angle-right(aria-hidden='true')
+              span.sr-only Next
+  // End Customer Reviews
+  // Start Contact info
+  div.contact-imfo-box
+    div.container
+      div.row
+        div.col-md-4
+          i.fa.fa-whatsapp
+          div.overflow-hidden.arrow-right
+            h4 WhatsApp
+            p.lead
+              | +57 311 6429970 
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Fijo: 604 ....
+        div.col-md-4.arrow-right
+          i.fa.fa-map-marker
+          div.overflow-hidden
+            h4 Ubicación
+            p.lead
+              | Cra. 43 #57-75 Girardot con Echeverri, Medellín
+        div.col-md-4
+          i.fa.fa-envelope
+          div.overflow-hidden
+            h4 Correo electrónico
+            p.lead
+              | info.delicaseritos@gmail.com
+  // End Contact info
+  // Start Footer
+  footer.footer-area.bg-f
+    div.container
+      div.row
+        div.col-lg-3.col-md-6
+          h3 Horarios
+          p
+            span.text-color Monday: 
+            | Closed
+          p
+            span.text-color Tue-Wed :
+            |  9:Am - 10PM
+          p
+            span.text-color Thu-Fri :
+            |  9:Am - 10PM
+          p
+            span.text-color Sat-Sun :
+            |  5:PM - 10PM
+        div.col-lg-3.col-md-6
+          h3 &iexcl;Síguenos!
+          ul.list-inline.f-social
+            li.list-inline-item
+              a(href='https://l.wl.co/l?u=https%3A%2F%2Fwww.instagram.com%2Fdeli_caseritos%2F')
+                i.fa.fa-instagram(aria-hidden='true')
+            li.list-inline-item
+              a(href='https://l.wl.co/l?u=https%3A%2F%2Fwww.facebook.com%2Fdelicaseriotosconamor')
+                i.fa.fa-facebook(aria-hidden='true')
+    div.copyright
+      div.container
+        div.row
+          div.col-lg-12
+            p.company-name
+              | Todos los derechos reservados. &copy; 2022 
+              a(href='#') Restaurante DeliCaseritos
+              // <a href="https://html.design/">html design</a>
+  // End Footer
+  a#back-to-top(href='#' title='Back to top' style='display: none;')
+    i.fa.fa-paper-plane-o(aria-hidden='true')
+  // ALL JS FILES
+  script(src='/resources/js/jquery-3.2.1.min.js')
+  script(src='/resources/js/popper.min.js')
+  script(src='/resources/js/bootstrap.min.js')
+  // ALL PLUGINS
+  script(src='/resources/js/jquery.superslides.min.js')
+  script(src='/resources/js/images-loded.min.js')
+  script(src='/resources/js/isotope.min.js')
+  script(src='/resources/js/baguetteBox.min.js')
+  script(src='/resources/js/form-validator.min.js')
+  script(src='/resources/js/contact-form-script.js')
+  script(src='/resources/js/custom.js')
